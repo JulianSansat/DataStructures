@@ -26,6 +26,14 @@ public class DLinkedList {
     }
     
     public void addAtBeginning(DListNode node){
-        //TO-DO
+        if(head == null){
+            head = node;
+        }
+        else{
+            node.setNext(head);
+            head.setPrev(node);
+            this.head = node;
+        }
+        this.length ++;
     }
 }
