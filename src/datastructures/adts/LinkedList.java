@@ -97,10 +97,7 @@ public class LinkedList {
             }
             currentNode.setNext(currentNode.getNext().getNext());
         }
-        
-        
-        
-        
+        length --;
     }
     
 }
